@@ -10,7 +10,6 @@ class Program:
         self.getListOfFiles(self.dirName)
         if len(self.imageList) > 0:
             self.optimizeFiles()
-            
     
     def createVars(self):
         tinify.key = 'ndcB4zdZY3fsTSMz062vcxYQ5N6KLPbJ'
@@ -24,8 +23,6 @@ class Program:
             suffix = pathlib.Path(file).suffix
             if suffix in suffixList:
                 self.imageList.append(file)
-
-        print(self.imageList)
 
     def optimizeFiles(self):
         for imageFile in self.imageList:
