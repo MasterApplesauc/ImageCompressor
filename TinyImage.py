@@ -12,7 +12,7 @@ class Program:
             self.optimizeFiles()
     
     def createVars(self):
-        tinify.key = 'ndcB4zdZY3fsTSMz062vcxYQ5N6KLPbJ'
+        tinify.key = '*********' #Get a key from TinyPNG
         self.dirName = os.getcwd()
         self.imageList = []
         
